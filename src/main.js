@@ -8,9 +8,14 @@ const functions = require('firebase-functions');
 Vue.config.productionTip = false
 
 // Your web app's Firebase configuration
+let yourApiKey = ""
+if (functions.config().hasOwnProperty('firebase')) {
+  yourApiKey = functions.config().firebase.apikey
+} else {
+  yourApiKey = "Replace this to your apikey"
+}
 const firebaseConfig = {
-  // TODO: In development direct apiKey, in production using ENV
-  apiKey: "AIzaSyC3UxGlwF4T_H538owof5mq8wAHpWnSLp4",
+  apiKey: yourApiKey,
   authDomain: "fir-vue-todo-bd004.firebaseapp.com",
   databaseURL: "https://fir-vue-todo-bd004.firebaseio.com",
   projectId: "fir-vue-todo-bd004",

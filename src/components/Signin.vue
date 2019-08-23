@@ -1,13 +1,5 @@
 <template>
   <div id="signin">
-    サインイン
-  </div>
-</template>
-
-<style>
-</style>
-<template>
-  <div id="signin">
     <h2>サインイン</h2>
 
     <!-- emailとpasswordの入力欄 -->
@@ -15,7 +7,7 @@
     <input type="password" placeholder="Password" v-model="password">
     <button @click="signIn">Signin</button>
 
-　　<!-- サインアップページ遷移ボタン -->
+    <!-- サインアップページ遷移ボタン -->
     <p>
       アカウントをお持ちではない方
       <router-link to="/signup">新規作成</router-link>
@@ -53,7 +45,6 @@ export default {
   }
 };
 </script>
-
 
 <style>
 </style>
