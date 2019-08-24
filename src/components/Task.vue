@@ -37,7 +37,7 @@ export default {
     this.uid = firebase.auth().currentUser.uid;
     this.todosRef = this.database.ref("todos/" + this.uid);
 
-    var _this = this;
+    // var _this = this;
     // データに変更があると実行されるfunction
     this.todosRef.on("value", (snapshot) => {
       this.todos = snapshot.val(); // 再取得してtodosに格納する
