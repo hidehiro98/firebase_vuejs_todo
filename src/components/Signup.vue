@@ -26,7 +26,7 @@ export default {
     };
   },
   methods: {
-    // singUpボタンが押されたときに実行されるfunctrion
+    // singUpボタンが押されたときに実行されるfunction
     signUp: function() {
       firebase
         .auth()
