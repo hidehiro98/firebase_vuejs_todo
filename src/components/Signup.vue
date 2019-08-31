@@ -2,7 +2,13 @@
   <div class="signup">
     <h2>サインアップ</h2>
     <!-- 登録フォーム -->
-    <input type="email" placeholder="email" v-model="email">
+    <h3>Two way binding form</h3>
+    <input type="email" placeholder="email" v-model="email" >
+    <p>Your email is: {{ email }}</p>
+
+    <h3>One way binding form (Data object of Vue.js -> input form)</h3>
+    <input type="text" placeholder="test" v-bind:value="test" >
+    <p>{{ test }}</p>
     <input type="password" placeholder="password" v-model="password">
     <button @click="signUp">登録</button>
 
@@ -21,8 +27,9 @@ export default {
   name: "Singup",
   data() {
     return {
-      email: "",
-      password: ""
+      email: "default@email.com",
+      password: "",
+      test: "test from data object of Vue.js"
     };
   },
   methods: {
