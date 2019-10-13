@@ -2,7 +2,7 @@
   <div class="signup">
     <h2>サインアップ</h2>
     <!-- 登録フォーム -->
-    <h3>Two way binding form</h3>
+    <h3>Email (Two way binding form)</h3>
     <input type="email" placeholder="email" v-model="email" >
     <p>Your email is: {{ email }}</p>
 
