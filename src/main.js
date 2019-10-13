@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import firebase from 'firebase'
 
-const functions = require('firebase-functions');
+// const functions = require('firebase-functions');
 
 Vue.config.productionTip = false
 
